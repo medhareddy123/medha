@@ -1,3 +1,4 @@
+import java.util.Date;
 public class Main {
 
 	public static void main(String[] args) {
@@ -7,11 +8,10 @@ public class Main {
 		//Please check that your code works and has no
 		//compilation problems before to submit
 	StudentGroup std=new StudentGroup(7);
-	Calendar cal = Calendar.getInstance();
-cal.set(2013, Calendar.JANUARY, 9); //Year, month and day of month
-Date date = cal.getTime();
+	Date myDate = new Date("2015-03-07");
+
 	Student m[];
-	 m[0]=new Student(77,"medha",date,60.46);
+	 m[0]=new Student(77,"medha",myDate,60.46);
 	std.setStudents(m);
 	//std.addFirst(m1);
 	//std.addLast(m1);
